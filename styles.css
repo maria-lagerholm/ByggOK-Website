@@ -1,0 +1,642 @@
+/* Resetting margin and padding for all elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #f5f5f5 !important;
+}
+
+/* Landscape mobile iPhone X fix */
+{
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+}
+
+/* Video Container Styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Embedded Content Body Styles */
+#embeddedContent body {
+  background-color: #ffffff;
+}
+
+/* Video Element Styles */
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Video Overlay Styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Button Container Styles */
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;  /* Change from column to row */
+  flex-wrap: wrap;  /* Allow the buttons to wrap */
+  justify-content: center;  /* Center the buttons */
+  align-items: center;
+  z-index: 4 !important; /* Make sure this is higher than the z-index of other elements in .video-container */
+  gap: 10px;  /* Spacing between buttons */
+}
+
+/* Button Styles */
+.button-container button {
+  min-width: 100px;  /* Minimum width for the buttons */
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .button-container button {
+    font-size: 18px;  /* Smaller font size */
+    padding: 5px 10px;  /* Adjust padding */
+  }
+}
+
+/* Video Button Styles */
+.video-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;  /* Add some right margin for spacing */
+}
+
+/* Text Element Styles */
+.text {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Section Styles */
+.image-section {
+  width: 70%;
+  height: 200px;
+  position: relative;
+  margin: 0 auto; /* Center the div */
+  background-image: url('./images/BK_Liggande_4f.png');
+  background-size: 100% auto; /* Width is 100%, height will be auto */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* White Container Styles */
+.white-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+/* Employee Styles */
+.employee {
+  display: inline-block;
+  width: 48%; /* slightly less than half to account for any potential padding/margins */
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+/* Employee Image Styles */
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Employee Name Styles */
+.employee h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Kenneth Styles */
+.kenneth {
+  transform: scale(1.1);
+}
+
+/* White Container Paragraph Styles */
+.white-container p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555F61;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* White Container Image Styles */
+.white-container img {
+  max-width: 200px;
+  margin-left: 20px;
+}
+
+/* Float Left Image Styles */
+.white-container img {
+  float: left;
+  max-width: 100px;
+  margin: 0 20px 20px 0;
+  display: center;
+}
+
+/* Contact Button Styles */
+.contact-btn {
+  background-color: #0774b9;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 5px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Contact Button Hover Styles */
+.contact-btn:hover {
+  background-color: #055a8c;
+}
+
+/* Phone Button Styles */
+.phone-btn {
+  background-color: #41C9A2; /* Green color for phone button */
+}
+
+/* Separator Styles */
+.separator {
+  width: 100%;
+  height: 70px;
+  background-color: #2a72b5;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* Unique Separator Styles */
+.separator.unique {
+  margin-top: 100px;
+}
+
+/* Separator Text Styles */
+.separator-text {
+  text-align: center; /* Center the text */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the element */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  z-index: 1;
+}
+
+/* Photo Gallery Styles */
+.imageCarousel {
+  height: 92%;
+  width: 92%;
+  margin: 20px auto;
+  background: transparent;  /* Set the background to white */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* Slick Slide Styles */
+.slick-slide {
+  background: transparent;  /* Set the slide background to white */
+  color: #333;
+  padding: 40px 0;
+  font-size: 1.25em;
+  font-family: "Verdana";
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Slick Slide Image Styles */
+.slick-slide img {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Slick Slider Button Styles */
+.slick-slider button{ 
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  z-index:100;
+  width: 50px;
+  height: 50px; 
+  color: transparent;
+  cursor: pointer;
+  transform: translate(0%,-70%);
+  border-radius: 36px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0);
+}
+
+/* Slick Slider Previous Button Styles */
+.slick-slider .slick-prev{
+  left:10px;
+}
+
+/* Slick Slider Previous Button Before Styles */
+.slick-slider .slick-prev::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f104";
+  font-size:30px;
+  color: #2a72b5;
+  left: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Slick Slider Next Button Styles */
+.slick-slider .slick-next{
+  right:10px;
+}
+
+/* Slick Slider Next Button After Styles */
+.slick-slider .slick-next::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-size:30px;
+  color: #2a72b5;
+  right: 15px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Slick Slide Description Styles */
+.slick-slide .desc {
+  opacity: 0;
+}
+
+/* Slick Slide Description Transition Styles */
+.slick-slide .desc>* {
+  transition: all 900ms ease;
+}
+
+/* Slick Slide Description Heading Styles */
+.slick-slide .desc h2 {
+  position: relative;
+  left: 50px;
+  line-height: 1;
+}
+
+/* Slick Slide Description Heading Span Styles */
+.slick-slide .desc h2 span{
+  color:#bcdee7;
+}
+
+/* Slick Slide Description Paragraph Styles */
+.slick-slide .desc p {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+}
+
+/* Slick Previous Button Before Styles */
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+/* Slick Dots Styles */
+.slick-dots {
+  text-align: center;
+}
+
+/* Slick Dots List Styles */
+.slick-dots li {
+  display: inline-block;
+  padding: 1px;
+  background: #ccc;
+  margin: 10px 5px;
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Slick Dots Active List Styles */
+.slick-dots li.slick-active {
+  background: #072f5f;
+}
+
+/* Slick Dots Button Styles */
+.slick-dots button {
+  display: none;
+}
+
+/* Slick Slide Transition Styles */
+.slick-slide {
+  opacity: 0.2;
+  transition: all 300ms ease;
+}
+
+/* Slick Current Slide Styles */
+.slick-current {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Slick Current Slide Description Styles */
+.slick-current .desc {
+  opacity: 1;
+}
+
+/* Photo Album Styles */
+.photo-album_1 {
+  position: relative;
+  width: 70%;
+  height: 800px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+ /* border: 2px solid #e0e0e0;*/
+}
+
+/* Before After Container Styles */
+.before-after-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Before and After Image Styles */
+.before-image, .after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: width 0.5s;
+}
+
+/* After Image Styles */
+.after-image {
+  width: 50%;
+  z-index: 1;
+}
+
+/* Slider Styles */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 100%;
+  background-color: #2a72b5;
+  z-index: 2;
+  cursor: ew-resize;
+}
+
+/* Slider Before Styles */
+.slider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px #ffffff;
+}
+
+/* Customer Logos Styles */
+.customer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+/* Logo Container Styles */
+.logo-container {
+  width: calc(20% - 5px); /* Four logos per row */
+  margin: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex; /* Flexbox for centering the logo */
+  align-items: center; /* Vertically center the logo */
+  justify-content: center; /* Horizontally center the logo */
+  padding: 5px; /* Padding around the logo */
+}
+
+/* Logo Container Hover Styles */
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+/* Logo Container Image Styles */
+.logo-container img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .customer-logos {
+    padding: 5px 0;
+  }
+
+  .logo-container {
+    margin: 10px;
+    width: calc(30% - 35px); /* Four logos per row */
+  }
+  .logo-container img {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Responsive Text Styles */
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 24px;
+    top: 10%;
+    left: 50%;
+  }
+  .image-section {
+    height: 200px;
+  }
+  .photo-album_1 {
+    height: 420px;
+  }
+  .employee {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* spacing between stacked employees */
+  }
+}
+
+/* Address and Map Section Styles */
+.address-map-section {
+  padding: 40px 0;
+  text-align: center; /* Centering the text */
+  font-family: Arial, sans-serif; /* Using a generic font, replace with your website's font if different */
+}
+
+/* Address Styles */
+.address {
+  margin-bottom: 20px; /* Space between the address and the map */
+  font-size: 16px; /* Font size for the address */
+}
+
+/* Map Styles */
+.map {
+  max-width: 800px; /* Limiting the map width */
+  margin: 0 auto; /* Centering the map */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Map Iframe Styles */
+.map iframe {
+  width: 100%;
+  height: 400px; /* Setting a fixed height for the map */
+  border: 0;
+  display: block;
+}
+
+/* Responsive Styles for Medium Screens */
+@media only screen and (max-width: 1200px) {
+  .text {
+    font-size: 30px;
+    top: 10%;
+    left: 40%;
+  }
+  .image-section {
+    height: 200px;
+  }
+  .photo-album_1 {
+    height: 420px;
+    width: 85%;
+  }
+  .separator-text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .white-container p {
+    font-size: 12px;
+  }
+
+  .imageCarousel {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .slick-slide img {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px; 
+  }
+
+  .developer-credit {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+}
+
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 480px) {
+  .text {
+    font-size: 24px;
+  }
+  .image-section {
+    height: 200px;
+    background-image: url('./images/BK_staende_4f-p-500.png');
+  }
+  .photo-album_1 {
+    height: 420px;
+  }
+  .employee {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* spacing between stacked employees */
+  }
+  .separator-text {
+    font-size: 15px;
+  }
+  .white-container p {
+    font-size: 14px !important;
+  }
+
+  .imageCarousel {
+    height: 100%;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .slick-slide img {
+    width: 90%;
+    border-radius: 15px; 
+  }
+}
