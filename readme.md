@@ -20,7 +20,8 @@ Welcome to the ByggOK Website Repository! This repository contains all the neces
 └── styles.css
 ```
 
-![ByggOK Website](https://imgur.com/nkUY5bk.png)
+![ByggOK Website](https://i.imgur.com/nkUY5bk.png)
+
 
 ### The main animation
 The image was generated using Midjourney AI and later animated in After Effects using expressions and zoom features
