@@ -1,5 +1,5 @@
 # 🌐 ByggOK Website Repository
-!(https://imgur.com/nkUY5bk.png)
+
 ## 🚀 Introduction
 
 Welcome to the ByggOK Website Repository! This repository contains all the necessary files and assets for the ByggOK website, showcasing ByggOK's services and expertise in the construction industry. The website features a sleek design, responsive layout, and an interactive chatbot powered by Streamlit to assist visitors with their inquiries.
@@ -20,7 +20,7 @@ Welcome to the ByggOK Website Repository! This repository contains all the neces
 └── styles.css
 ```
 
-## 🌟 Special Features
+![ByggOK Website](https://imgur.com/nkUY5bk.png)
 
 ### The main animation
 The image was generated using Midjourney AI and later animated in After Effects using expressions and zoom features
