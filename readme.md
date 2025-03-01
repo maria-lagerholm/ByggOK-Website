@@ -1,6 +1,6 @@
 # ByggOK Website Repo
 
-byggok.se
+www.byggok.se
 
 ## Intro
 This repo holds everything for the ByggOK construction website
