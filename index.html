@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-
   <!-- Tab icon -->
-<link rel="icon" href="./images/webclip.png" type="image/png">
+  <link rel="icon" href="./images/webclip.png" type="image/png">
 
-    <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-    <!-- Page Title -->
-  <title>Expertis för ditt bygge</title>
+  <!-- Title -->
+  <title>Vi besiktar, utreder och vägleder dig i alla frågor om ditt hus.</title>
 
-    <!-- Font and Stylesheets -->
-  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- PhotoSwipe styles -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+  <!-- Fonts & your own stylesheet -->
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 
+  <!-- Slick’s two CSS files -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Font Awesome link -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 <body>
+    
+
+
+
   <!-- Video -->
   <div class="video-container">
     <video autoplay loop muted playsinline>
       <source src="byggok.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
-    <div class="text">Expertis för ditt bygge</div>
+    <div class="text">Vi besiktar, utreder och vägleder dig i alla frågor om ditt hus.</div>
     
     <!-- Main menu -->
      <!-- Add buttons for each section with smooth scrolling -->
 
     <div class="button-container">
-      <button class="video-button" onclick="smoothScroll('separator-section-luft', 2000)">
+
+<button class="video-button" onclick="smoothScroll('separator-section-om-oss', 2000)">
+Om oss </button>
+
+<button class="video-button" onclick="smoothScroll('separator-section-Överlåtelsebesiktning', 2000)">
+Överlåtelsebesiktning </button>
+
+<button class="video-button" onclick="smoothScroll('separator-section-luft', 2000)">
   Lufttäthetsmätning
 </button>
-<button class="video-button" onclick="smoothScroll('separator-section-besiktning', 2000)">
-  Besiktning
-</button>
+
 <button class="video-button" onclick="smoothScroll('separator-section-fuktutredning', 2000)">
   Fuktutredning
 </button>
 <button class="video-button" onclick="smoothScroll('separator-section-termografering', 2000)">
   Termografering
-</button>
-<button class="video-button" onclick="smoothScroll('separator-section-3D-visualisering', 2000)">
-  3D-visualisering
-</button>
-<button class="video-button" onclick="smoothScroll('separator-section-om-oss', 2000)">
-  Om oss
 </button>
 
     </div>
@@ -70,66 +78,108 @@
 
 
 <section class="white-container">
-  <div><p>Redan 2013 bestämde vi oss för att leverera besiktningar till människor med husdrömmar. Sedan dess har vi utfört tusentals noggrant utförda uppdrag till lyckliga husbyggare runt om i Västra Götaland. Vi är medvetna om att bygga hus kan vara en stressig och påfrestande tid varför vi finns för dig. Vår ambition är att alltid leverera vårt yttersta i varje projekt.</p>
-  <p>Våra tjänster är tillgängliga för byggherrar, entreprenörer och fastighetsägare.</p></div>
- <div><img src="./images/Certifierade-bsr.png" alt="Certified"></div>
+  <div><p>Sedan 2013 har vi hjälpt människor med husdrömmar att fatta trygga beslut. Vi har genomfört tusentals besiktningar i hela Västra Götaland. Våra kunder är privatpersoner, entreprenörer och fastighetsägare.</p>
+  <p>Att köpa eller sälja ett hus är ett stort beslut. Därför erbjuder vi överlåtelsebesiktningar enligt SBRs modell. Det är en erkänd metod som ger en tydlig bild av husets skick. Du får veta om det finns skador eller riskkonstruktioner som kan påverka husaffären.</p></div>
+  <p>Vi erbjuder även fuktutredningar, lufttäthetsmätningar och termografering av klimatskalet. Allt för att du ska få en helhetsbild av fastigheten.</p></div>
+</div>
+
 </section>
 
+  <!-- Om oss Section -->
 
+
+  <div class="separator" id="separator-section-om-oss">
+    <span class="separator-text">Om oss</span>
+  </div>
+  
+
+<section class="white-container">
+  <div class="employee">
+    <img src="./images/kristoffer_2025.jpg" alt="Kristoffer Lagerholm">
+    <button class="contact-btn email-btn" onclick="window.location.href='mailto:kristoffer@byggok.se'">kristoffer@byggok.se</button>
+    <button class="contact-btn phone-btn" onclick="window.location.href='tel:0706-87 10 06'">0706-87 10 06</button>
+    <h3>Kristoffer Lagerholm</h3>
+    <p>Efter att ha tagit min kandidatexamen i industriell ekonomi med specialisering i byggteknik inledde jag min karriär som byggnadsinspektör i Marks kommun. Därefter följde några år som skadeutredare på RISE samt som projektledare. 2013 togs steget till att starta Byggok AB. Här får jag utlopp för min passion för småhusbranschen. Jag tar fullt ansvar i varje projekt och ser till att du som kund alltid kan känna dig trygg och säker.</p>
+    
+  </div>
+  <div class="employee">
+    <img src="./images/kenneth_2025.jpg" alt="Kenneth Eriksson" class="kenneth">
+
+    <button class="contact-btn email-btn" onclick="window.location.href='mailto:kenneth@byggok.se'">kenneth@byggok.se</button>
+    <button class="contact-btn phone-btn" onclick="window.location.href='tel:0709-90 53 66'">0709-90 53 66</button>
+    <h3>Kenneth Eriksson</h3>
+    <p>Jag började i servicebranschen och lärde mig tidigt att detaljer och kvalitet gör skillnad. I dag har jag över tio års erfarenhet och har utfört fler än tusen lufttäthets- och fuktmätningar. Noggrannhet, tydlig struktur och resultat som levereras i tid är fortfarande grunden i mitt arbete.
+    </p>
+    
+  </div>
+</section>
+
+<!-- Överlåtelsebesiktning -->
+
+
+<div class="separator" id="separator-section-Överlåtelsebesiktning">
+  <span class="separator-text">Överlåtelsebesiktning</span>
+</div>
+
+<div id="embeddedContent"></div>
+
+<section class="white-container">
+  <div>
+
+    <p>En överlåtelsebesiktning är ett viktigt verktyg för att minska riskerna och skapa trygghet i affären för både köpare och säljare. Jag erbjuder noggrant utförda överlåtelsebesiktningar enligt SBR-modellen en välbeprövad och erkänd metod i branschen. Besiktningen hjälper dig att få en tydlig bild av fastighetens tekniska skick, identifiera eventuella skador och riskkonstruktioner, och bedöma om det finns behov av vidare utredning.</p>
+    <p>Som köpare får du ett professionellt underlag inför ett av livets största köp, full insikt i eventuella brister, framtida underhållsbehov och kostnadsrisker samt ett bättre förhandlingsläge som skapar trygghet i beslutsfattandet. Som säljare får du den transparens som stärker köparens förtroende, en effektivare försäljning utan obehagliga överraskningar och en minskad risk för framtida tvister.</p>
+    <p>Själva besiktningen är i grunden en okulär genomgång av byggnaden där jag inspekterar fastighetens tillgängliga utrymmen utan ingrepp eller mätningar. Utifrån mina observationer gör jag vid behov en riskanalys och rekommenderar vidare teknisk utredning. Alla iakttagelser sammanställs i ett tydligt och lättförståeligt utlåtande. </p>
+    <p>Jag är godkänd besiktningsman genom SBR och har mångårig erfarenhet inom byggteknik och fastighetsbedömning, vilket ger dig trygghet i varje steg av processen. Om du vill veta mer eller boka en besiktning - <a href="tel:+46706871006" class="contact-btn phone-btn inline-btn">
+      kontakta Kristoffer
+    </a>
+    </p>
+    </p>
+
+
+        <p><b>Priser</b></p>
+    <p>Överlåtelsebesiktning 8 900:-</p>
+    <p>Överlåtelsebesiktning avancerad (inklusive fuktmätning i riskkonstruktion) 10 900:-</p> </div> </section>
 
 
 <!-- Lufttäthetsmätning -->
 
-<div class="separator unique" id="separator-section-luft">
+<div class="separator" id="separator-section-luft">
   <span class="separator-text">Lufttäthetsmätning</span>
 </div>
-
 
 
 <section class="white-container">
   <div>
   <p >Vi har mångårig erfarenhet av lufttäthetsmätningar och provar flera hundra hus om året.</p>
   <p >
-Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar, entreprenörer och fastighetsägare för att säkerställa att specificerade lufttäthetskrav är uppfyllda. Byggnaders lufttäthet har stor betydelse för energiförbrukningen och den termiska komforten. Vi utför lufttäthetsmätningar både under byggskedet samt i färdigställda byggnader.</p></div>
+Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar, entreprenörer och fastighetsägare för att säkerställa att specificerade lufttäthetskrav är uppfyllda. Byggnaders lufttäthet har stor betydelse för energiförbrukningen och den termiska komforten. Vi utför lufttäthetsmätningar både under byggskedet samt i färdigställda byggnader - <a href="tel:+46709905366" class="contact-btn phone-btn inline-btn">
+  kontakta Kenneth
+</a></p></div>
+
 </section>
 
-<div>
+
+  <!-- ======== MARKUP FOR CAROUSEL ======== -->
 <section class="imageCarousel">
-    <div>
-      <img src="images/hus.png">
-    </div>
+  <div><img src="images/hus.jpg"              alt="Hus" /></div>
+  <div><img src="images/luft-kristoffer.jpg"  alt="Lufttäthet" /></div>
+  <div><img src="images/nyproduction.jpg"     alt="Nyproduktion" /></div>
+</section>
+   
   
-    <div>
-      <img src="images/luft-kristoffer.png">
-    </div>
-  
-    <div>
-      <img src="images/nyproduction.png">
-    </div>
-  
+  <!-- ======== SCRIPTS (order matters) ======== -->
+  <!-- 1. jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- 2. Slick JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- 3. Your own carousel logic -->
+  <script src="js/album.js"></script>
   
    
 </section>
  </div>
 
 
-
-<!-- Besiktning -->
-
-
-<div class="separator" id="separator-section-besiktning">
-  <span class="separator-text">Besiktning</span>
-</div>
-
-<div id="embeddedContent"></div>
-
-<script>
-  fetch('besiktningar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('embeddedContent').innerHTML = data;
-    });
-</script>
 
 <!-- Fuktutredning -->
 
@@ -156,160 +206,9 @@ Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar,
    <p>Vi utför termografering åt byggherrar, entreprenörer och fastighetsägare genom att använda värmekamera för att indikera temperaturvariationer i en byggnad, vilket avslöjar köldbryggor, isolerbrister eller luftläckage i klimatskalet. Utifrån branschstandard bedömer vi om bristerna är av sådan omfattning att de bör åtgärdas.</p></div>
 </section>
 
-<!-- 3D-visualisering -->
 
 
 
-
-<div class="separator" id="separator-section-3D-visualisering">
-  <span class="separator-text">3D-visualisering</span>
-</div>
-
-
-<div class="photo-album_1">
-    <div class="before-after-container">
-      <img class="before-image" src="https://imgur.com/91cjL6r.jpg" alt="Before">
-      <img class="after-image" src="https://imgur.com/T53SH4j.jpg" alt="After">
-      <div class="slider"></div>
-    </div>
-  </div>
-
-  <script>
-    const slider = document.querySelector('.slider');
-    const afterImage = document.querySelector('.after-image');
-    const container = document.querySelector('.before-after-container');
-    let isDragging = false;
-
-    const startDrag = (e) => {
-      isDragging = true;
-      e.preventDefault();
-    };
-
-    const stopDrag = () => {
-      isDragging = false;
-    };
-
-    const moveSlider = (event) => {
-      if (isDragging) {
-        const rect = container.getBoundingClientRect();
-        let x = (event.touches ? event.touches[0].clientX : event.clientX) - rect.left;
-        x = Math.max(5, Math.min(rect.width - 5, x));
-        afterImage.style.width = `${x}px`;
-        slider.style.left = `${x - 5}px`;
-      }
-    };
-
-    slider.addEventListener('mousedown', startDrag);
-    slider.addEventListener('touchstart', startDrag);
-
-    window.addEventListener('mouseup', stopDrag);
-    window.addEventListener('touchend', stopDrag);
-
-    container.addEventListener('mousemove', moveSlider);
-    container.addEventListener('touchmove', moveSlider);
-  </script>
-
-<section class="white-container">
-  <div>
-  <p>
-    3D-visualisering spelar en nyckelroll i presentationen av ditt unika projekt, oavsett i vilken fas det befinner sig. Med hjälp av 3D-bilder som illustrerar framtida byggnadsverk kan vi skapa genuint intresse för idéer som ännu inte har realiserats.
-  </p>
-  <p>
-    Vi formger varje projekt med hjälp av Autodesk-program som 3ds Max och Revit, baserat på kompletta 2D-ritningar. Vi förvandlar dina idéer till verklighet, så att du kan se dem ur en arkitekts perspektiv. Som en introduktion till vårt tjänsteutbud erbjuder vi en kostnadsfri 30-minuters konsultation inom 3D-visualisering.
-  </p>
-  <p>
-    Rendering-interiör: Från 2450 SEK (exkl. moms)
-  </p>
-  <p>
-    Rendering-exteriör: Från 4400 SEK (exkl. moms)
-  </p>
-</div>
-</section>
-<div>
-<section class="imageCarousel">
-    <div>
-      <img src="images/project_ulricehamn_1-name.png">
-    </div>
-  
-    <div>
-      <img src="images/project_ulricehamn_9-name.png">
-    </div>
-  
-    <div>
-      <img src="images/project_ulricehamn_7-name.png">
-    </div>
-  
-  
-    <div>
-      <img src="images/project_ulricehamn_6-name.png">
-    </div>
-
-    <div>
-      <img src="images/project_ulricehamn_5-name.png">
-    </div>
-
-    <div>
-      <img src="images/project_ulricehamn_3-name.png">
-    </div>
-
-    <div>
-      <img src="images/atrium.effectsResult-name.png">
-    </div>
-
-    <div>
-      <img src="images/front.effectsResult-name.png">
-    </div>
-
-    <div>
-      <img src="images/bathroom_0_ps-name.png">
-    </div>
-
-    <div>
-      <img src="images/back.effectsResult-name.png">
-    </div>
-
-    <div>
-      <img src="images/back_gpu.effectsResult-name.png">
-    </div>
-</section>
-</div>
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
-<script src="./js/album.js"></script>
-
-
-
-  <!-- Om oss Section -->
-
-
-<div class="separator" id="separator-section-om-oss">
-  <span class="separator-text">Om oss</span>
-</div>
-
-
-<section class="white-container">
-  <div class="employee">
-    <img src="./images/IMG_5723-p-500.png" alt="Kristoffer Lagerholm">
-    <button class="contact-btn email-btn" onclick="window.location.href='mailto:kristoffer@byggok.se'">kristoffer@byggok.se</button>
-    <button class="contact-btn phone-btn" onclick="window.location.href='tel:0706-87 10 06'">0706-87 10 06</button>
-    <h3>Kristoffer Lagerholm</h3>
-    <p>Efter att ha tagit min kandidatexamen i industriell ekonomi med specialisering i byggteknik inledde jag min karriär som byggnadsinspektör i Marks kommun. Därefter följde några år som skadeutredare på RISE samt som projektledare. 2013 togs steget till att starta Byggok AB. Här får jag utlopp för min passion för småhusbranschen. Jag tar fullt ansvar i varje projekt och ser till att du som kund alltid kan känna dig trygg och säker.</p>
-    
-  </div>
-  <div class="employee">
-    <img src="./images/IMG_5726-p-3200.jpg" alt="Kenneth Eriksson" class="kenneth">
-
-    <button class="contact-btn email-btn" onclick="window.location.href='mailto:kenneth@byggok.se'">kenneth@byggok.se</button>
-    <button class="contact-btn phone-btn" onclick="window.location.href='tel:0709-90 53 66'">0709-90 53 66</button>
-    <h3>Kenneth Eriksson</h3>
-    <p>Jag började min yrkesbana inom serviceyrken där jag bland annat lärde mig vikten av detaljer och kvalitet i allt jag gör. Jag är den lugna och metodiska i vårt team, och har under åren utvecklat en expertis inom lufttäthetsmätningar och fuktmätningar. För mig handlar arbetet om att vara noggrann, organiserad och att alltid leverera mätresultatet inom utsatt tid.</p>
-    
-  </div>
-</section>
 
 <!-- Vi arbetar med både privat- och företagskunder -->
 
@@ -320,9 +219,9 @@ Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar,
 <!-- Customer Logos Section -->
 
 <section class="customer-logos">
-    <div class="logo-container">
-        <img src="./images/GARBO-orig-logotype1-green-p-500.jpg" alt="Garbo Logo">
-    </div>
+  <div class="logo-container">
+    <img src="./images/SBR.jpg" alt="SBR Logo">
+</div>
     <div class="logo-container">
         <img src="./images/eksjohus-logo-png.png" alt="Eksjohus Logo">
     </div>
@@ -344,6 +243,7 @@ Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar,
     <div class="logo-container">
         <img src="./images/vastkuststugan_mas-p-500.jpg" alt="Vastkuststugan Logo">
     </div>
+
 </section>
 
 <div class="separator" id="separator-section-adress">
@@ -358,7 +258,6 @@ Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar,
         511 57 Kinna<br>
         Org.nr. 556941-8576
     </div>
-
     <!-- Google Map Embed -->
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2142.4587928640412!2d12.69902557701614!3d57.521605254385925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46501073d39f250d%3A0x708b2fd8825b56ad!2sMariebergsv%C3%A4gen%2033%2C%20511%2057%20Kinna!5e0!3m2!1sen!2sse!4v1694505084100!5m2!1sen!2sse"></iframe>
@@ -366,9 +265,11 @@ Lufttäthetsmätning (eller provtryckning) av klimatskal utförs åt byggherrar,
 </div>
   <!-- Developer Credit -->
 <div class="developer-credit">
-    Developed by Maria Lagerholm.
+    Developed by Maria Lagerholm
 </div>
+
+
+
 </body>
-<!-- Chatbot Widget Script -->
-<script src="https://byggok.se/js/chatbot-widget.js"></script>
+
 </html>
