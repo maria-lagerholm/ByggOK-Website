@@ -6,4 +6,4 @@ Responsive design, optimized for desktop and mobile. Animation created with Midj
 
 To run locally, clone the repo and open `index.html` or run `python -m http.server` and go to `localhost:8000`.
 
-Free to use and modify.
+Free to use and modify. https://www.byggok.se
